@@ -1,0 +1,131 @@
+.cabecalho__menu{
+    width: 24px;
+    height: 24px;
+    background-image: url(../assets/Menu.svg);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.cabecalho{
+    background-color: var(--cor-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 1em;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+.container__image{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 69vw;
+}
+
+.container__botao:checked ~ .lista-menu{
+    display: block;
+}
+
+.lista-menu__item, .lista-menu__titulo{
+    padding: .78em;
+    background-color: var(--cor-header);
+}
+.lista-menu__titulo{
+    color: var(--cor-titulo);
+    font-family: var(--fonte-principal);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.lista-menu__link{
+    background: var(--cor-gradient);
+    font-family: var(--fonte-principal);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    -o-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;    
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container__botao{
+    display: none;
+}
+
+.container__titulo{
+    display: none;
+}
+
+.opcoes{
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .cabecalho__menu{
+        display: none;
+    }
+    .container__titulo, .container__titulo-negrito{
+    font-family: var(--fonte-secundaria);
+            font-size: 1.87rem;
+    }
+    .container__titulo{
+        font-weight: 400;
+        display: block;
+    }
+    .container__titulo-negrito{
+        font-weight: 700;
+    }
+    .opcoes{
+        display: flex;
+    }
+    .opcoes__item{
+        padding: 0 1em;
+    }
+    .opcoes__link{
+        text-decoration: none;
+        font-family: var(--fonte-principal);
+        font-weight: 400;
+        font-size: 1rem;
+        color: #000;
+    }
+    .container__image-favoritos{
+        display: none;
+    }
+
+    .opcoes__botao:checked~.lista-menu{
+        display: block;
+        width: auto;
+        position: absolute;
+    }
+    .opcoes__botao{
+        display: none;
+    }
+    .container__image{
+        padding-inline-start: 4.5em;
+    }
+    .container__titulo{
+        margin-top: .4em;
+    }
+    .container__image-compras{
+        display: flex;
+        justify-content: center;
+        gap: 2em;
+        padding: 0 2em 0 0;
+    }
+    .container__image-compras{
+        padding-inline-end: 4em;
+
+    }
+}

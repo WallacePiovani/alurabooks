@@ -1,0 +1,118 @@
+.carrossel__titulo{
+    color: var(--cor-titulo);
+    background-color: var(--cor-header);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.12rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em 0 0.5em 0;
+}
+
+.swiper-slide img{
+    width: 100%;
+    margin: 0 0.5em;
+    box-shadow: 4px 1px 2px rgba(0, 0, 0, 0.25);
+}
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+.swiper-pagination{
+    position: initial;
+    margin: 0.5em 0;
+}
+
+.card{
+    background: var(--cor-header);
+    box-shadow: 2px 4px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    margin: 1em;
+    padding: 1em;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5em;
+}
+
+.descricao__titulo{
+    color: var(--cor-titulo);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.descricao__titulo-livro{
+    background: var(--cor-gradient);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.12rem;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: 0.5em 0;
+}
+
+.descricao__texto{
+    color: #000;
+    font-size: 0.87rem;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 1em 0 0;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+    gap: 28px;
+    margin: .8em 0 0 0.8em;
+}
+
+.botoes__ancora{
+    background-color: var(--cor-titulo);
+    color: var(--cor-header);
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    margin: .5em 0 0 0;
+    padding: 1em 2.2em ;
+}
+
+.botoes__ancora:hover{
+    background-color: var(--cor-hover);
+}
+
+.descricao__estrelas{
+    padding-bottom: 0.7em;
+}
+
+@media screen and (min-width: 1024px) {
+    .carrossel__titulo{
+        padding: 2em 0 1em 0;
+        font-size: 1.65rem;
+    }
+    .swiper{
+        width: 65%;
+    }
+    .swiper-pagination{
+        margin: 1.3em 0 3em 0;
+    }    
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 60%;
+    }
+
+    .card{
+        width: 50%;
+        margin: 2em auto;
+    }
+
+    
+}
