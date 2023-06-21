@@ -70,6 +70,9 @@
 .opcoes{
     display: none;
 }
+.container__texto{
+    display: none;
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -128,4 +131,38 @@
         padding-inline-end: 4em;
 
     }
+    .container__texto{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1728px) {
+
+    .container__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .7em;
+        text-decoration: none;
+    }
+
+    .container__texto{
+        display: block;
+        padding: 0 2.5em 0 0;
+        color: #000;
+        font-family: var(--fonte-principal);
+        font-weight: 400;
+        font-size: 1.25rem;
+    }
+
+    .container__image-compras{
+        padding: 0 0em 0 0;
+    }
+
+    .opcoes{
+        margin-right: auto;
+    }
+
+
 }
